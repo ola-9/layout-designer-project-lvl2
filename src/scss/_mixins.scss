@@ -1,0 +1,6 @@
+@mixin heading-bold($fz) {
+  font-weight: 700;
+  font-size: $fz;
+  font-family: "Roboto Bold", sans-serif;
+  text-transform: uppercase;
+}

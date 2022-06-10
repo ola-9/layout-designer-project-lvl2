@@ -1,0 +1,29 @@
+{
+  "name": "layout-designer-project-lvl2",
+  "version": "1.0.0",
+  "description": "Music Box",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch --update --style=expanded src/scss/app.scss:src/css/style.css",
+    "prod": "sass --no-source-map --style=compressed src/scss/app.scss:src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ola-9/layout-designer-project-lvl2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ola-9/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/ola-9/layout-designer-project-lvl2#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.9.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^8.0.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}
