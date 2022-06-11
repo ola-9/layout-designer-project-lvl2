@@ -1,0 +1,20 @@
+.btn {
+  padding: px-to-rem(20px 30px);
+
+  color: inherit;
+
+  text-transform: uppercase;
+
+  background: none;
+
+  border: none;
+  border-radius: px-to-rem(5px);
+
+  cursor: pointer;
+
+  &--green {
+    color: $white;
+
+    background: $green;
+  }
+}

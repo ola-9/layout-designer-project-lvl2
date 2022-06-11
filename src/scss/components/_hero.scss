@@ -1,0 +1,59 @@
+.hero {
+  text-align: center;
+  padding: px-to-rem(250px 20px 201px);
+
+  h2 {
+    margin-bottom: px-to-rem(16px);
+
+    @media (min-width: $desktop) {
+      margin-bottom: px-to-rem(31px);
+    }
+  }
+
+  p {
+    @include set-font(16px, 24px);
+    color: $white;
+    margin-bottom: px-to-rem(16px);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop) {
+      max-width: px-to-rem(570px);
+      margin: 0 auto;
+    }
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: px-to-rem(31px);
+    }
+  }
+
+  &__input {
+    margin-bottom: px-to-rem(24px);
+    height: px-to-rem(50px);
+    padding: px-to-rem(17px 22px);
+    border-radius: px-to-rem(3px);
+    border: px-to-rem(2px) solid $dark-gray;
+    background: rgba(255, 255, 255, 0%);
+
+    &::placeholder {
+      font-weight: 700;
+      font-family: "Roboto bold", sans-serif;
+      color: $white;
+    }
+
+    @media (min-width: $desktop) {
+      width: calc((100% - 21px) / 2);
+      margin-bottom: 0;
+    }
+  }
+}

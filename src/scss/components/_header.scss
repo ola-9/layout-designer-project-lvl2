@@ -1,0 +1,99 @@
+.header {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    position: absolute;
+    top: px-to-rem(25px);
+    left: 0;
+    right: 0;
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    min-width: px-to-rem(128px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include set-font(11px, 13px, bold, uppercase);
+    @include link-reset;
+    margin-bottom: px-to-rem(17px);
+
+    @media (min-width: $tablet) {
+      margin: px-to-rem(0px 90px 0px 0px);
+    }
+
+    p {
+      margin-left: px-to-rem(16px);
+    }
+  }
+
+  &__nav-wrapper {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__nav-wrapper nav {
+    margin-bottom: px-to-rem(18px);
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    @include list-reset;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav-item {
+    @media (min-width: $tablet) {
+      margin-right: px-to-rem(24px);
+    }
+
+    &:last-child {
+      @media (min-width: $tablet) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__nav-link {
+    @include link-reset;
+    @include set-font(11px, 13px, bold, uppercase);
+
+    &--active {
+      color: $white;
+    }
+  }
+
+  &__search {
+    width: 100%;
+    border-radius: px-to-rem(50px);
+    background: $dark;
+    border: none;
+    padding: px-to-rem(5px 10px);
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+      width: auto;
+    }
+
+    @media (min-width: $desktop) {
+      width: px-to-rem(248px);
+    }
+  }
+}

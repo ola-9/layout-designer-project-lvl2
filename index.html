@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,45 @@
   <link rel="stylesheet" href="/src/css/style.css">
   <title>Music Box by ola-9</title>
 </head>
+
 <body>
-  <h1>I did it again!</h1>
+  <header class="header">
+    <div class="container header__wrapper">
+      <a href="#" class="header__logo">
+        <img src="/src/images/logo.svg" width="24" height="24"
+          alt="Логотип Musix Box - две шестнадцатые ноты внутри белого круга">
+        <p>Music Box</p>
+      </a>
+      <div class="header__nav-wrapper">
+        <nav>
+          <ul class="header__nav">
+            <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--active">Главная</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Каталог</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Исполнители</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <input type="text" placeholder="Поиск..." class="header__search">
+      </div>
+    </div>
+    <section id="#page-description">
+      <div class="container hero">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>Без ограничений</h2>
+        <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="hero__form">
+          <div class="hero__input-wrapper">
+            <input type="text" placeholder="Имя" class="hero__input">
+            <input type="email" placeholder="Email" class="hero__input">
+          </div>
+          <button type="submit" class="btn btn--green">Получить доступ</button>
+        </form>
+      </div>
+    </section>
+  </header>
+  <main>
+
+  </main>
 </body>
+
 </html>
