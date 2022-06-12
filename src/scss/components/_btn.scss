@@ -17,4 +17,10 @@
 
     background: $green;
   }
+
+  &--subscribe {
+    display: block;
+    border: 1px solid $white;
+    @include link-reset;
+  }
 }

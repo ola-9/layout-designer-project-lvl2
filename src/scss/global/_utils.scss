@@ -2,7 +2,7 @@
   $result: ();
 
   @each $value in $list {
-    $result: append($result, (($value / $rem-base) * 1rem));
+    $result: append($result, calc(($value / $rem-base) * 1rem));
   }
 
   @return #{$result};
@@ -24,4 +24,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@mixin set-subscription-bg($class, $name) {
+  .subscription__item-wrapper--#{$class} {
+    background-image: url("../images/subscribe_#{$name}.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@mixin set-width($gap, $columns-count) {
+  width: calc((100% - $gap * ($columns-count - 1)) / $columns-count);
 }

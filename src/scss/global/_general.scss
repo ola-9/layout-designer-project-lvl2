@@ -4,7 +4,7 @@
 
 html {
   font-size: $rem-base;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -31,8 +31,13 @@ h2 {
   }
 }
 
+h3 {
+  @include set-font(16px, 24px, bold, uppercase);
+}
+
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -48,6 +53,6 @@ p {
   }
 
   @media (min-width: $desktop) {
-    max-width: px-to-rem(1200px);
+    max-width: 1240px;
   }
 }

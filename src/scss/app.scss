@@ -2,7 +2,8 @@
 @import "./global/variables";
 @import "./global/_utils";
 @import "./global/general";
+@import "./global/atomic";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/btn";
-
+@import './components/subscription';

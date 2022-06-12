@@ -14,7 +14,7 @@
 
 html {
   font-size: 18px;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -54,8 +54,16 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 0.8888888889rem;
+  line-height: 1.3333333333rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -73,8 +81,41 @@ p {
 }
 @media (min-width: 1240px) {
   .container {
-    max-width: 66.6666666667rem;
+    max-width: 1240px;
   }
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.g-50 {
+  gap: 50px;
+}
+
+.text-size-1 {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .header {
@@ -104,6 +145,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+  color: #fff;
   margin-bottom: 0.9444444444rem;
 }
 @media (min-width: 768px) {
@@ -183,14 +225,15 @@ p {
 
 .hero {
   text-align: center;
-  padding: 13.8888888889rem 1.1111111111rem 11.1666666667rem;
+  color: #fff;
+  padding: 250px 20px 201px;
 }
 .hero h2 {
-  margin-bottom: 0.8888888889rem;
+  margin-bottom: 16px;
 }
 @media (min-width: 1240px) {
   .hero h2 {
-    margin-bottom: 1.7222222222rem;
+    margin-bottom: 31px;
   }
 }
 .hero p {
@@ -198,16 +241,15 @@ p {
   line-height: 1.3333333333rem;
   font-weight: normal;
   text-transform: none;
-  color: #fff;
-  margin-bottom: 0.8888888889rem;
+  margin-bottom: 16px;
 }
 .hero__form {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1240px) {
+@media (min-width: 768px) {
   .hero__form {
-    max-width: 31.6666666667rem;
+    max-width: 570px;
     margin: 0 auto;
   }
 }
@@ -215,19 +257,19 @@ p {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1240px) {
+@media (min-width: 768px) {
   .hero__input-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 1.7222222222rem;
+    margin-bottom: 31px;
   }
 }
 .hero__input {
-  margin-bottom: 1.3333333333rem;
-  height: 2.7777777778rem;
-  padding: 0.9444444444rem 1.2222222222rem;
-  border-radius: 0.1666666667rem;
-  border: 0.1111111111rem solid #cacaca;
+  margin-bottom: 24px;
+  height: 50px;
+  padding: 17px 22px;
+  border-radius: 3px;
+  border: 2px solid #cacaca;
   background: rgba(255, 255, 255, 0);
 }
 .hero__input::placeholder {
@@ -235,9 +277,9 @@ p {
   font-family: "Roboto bold", sans-serif;
   color: #fff;
 }
-@media (min-width: 1240px) {
+@media (min-width: 768px) {
   .hero__input {
-    width: calc((100% - 21px) / 2);
+    width: calc((100% - 24px) / 2);
     margin-bottom: 0;
   }
 }
@@ -254,6 +296,80 @@ p {
 .btn--green {
   color: #fff;
   background: #34c176;
+}
+.btn--subscribe {
+  display: block;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: inherit;
+}
+
+.subscription {
+  text-align: center;
+  color: #fff;
+}
+.subscription__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.subscription__item-wrapper {
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .subscription__item-wrapper {
+    width: calc((100% - 50px) / 2);
+  }
+}
+@media (min-width: 1240px) {
+  .subscription__item-wrapper {
+    width: calc((100% - 100px) / 3);
+  }
+}
+.subscription .subscription__item-wrapper--free {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+.subscription .subscription__item-wrapper--standard {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+.subscription .subscription__item-wrapper--premium {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+.subscription__item {
+  padding: 16px 24px 65px;
+}
+.subscription__header {
+  margin-bottom: 50px;
+}
+.subscription__item-header {
+  margin-bottom: 200px;
+}
+.subscription__value {
+  font-size: 3.5555555556rem;
+  line-height: 3.5555555556rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.subscription__value span {
+  font-size: 32px;
+  vertical-align: text-top;
+}
+.subscription__btn {
+  margin-bottom: 65px;
+}
+.subscription__footer {
+  font-size: 0.7222222222rem;
+  line-height: 1.0555555556rem;
+  font-weight: normal;
+  text-transform: none;
 }
 
 /*# sourceMappingURL=style.css.map */

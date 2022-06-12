@@ -1,27 +1,28 @@
 .hero {
   text-align: center;
-  padding: px-to-rem(250px 20px 201px);
+  color: $white;
+  padding: 250px 20px 201px;
 
   h2 {
-    margin-bottom: px-to-rem(16px);
+    margin-bottom: 16px;
 
     @media (min-width: $desktop) {
-      margin-bottom: px-to-rem(31px);
+      margin-bottom: 31px;
     }
   }
 
   p {
     @include set-font(16px, 24px);
-    color: $white;
-    margin-bottom: px-to-rem(16px);
+    margin-bottom: 16px;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: $desktop) {
-      max-width: px-to-rem(570px);
+
+    @media (min-width: $tablet) {
+      max-width: 570px;
       margin: 0 auto;
     }
   }
@@ -30,19 +31,19 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: px-to-rem(31px);
+      margin-bottom: 31px;
     }
   }
 
   &__input {
-    margin-bottom: px-to-rem(24px);
-    height: px-to-rem(50px);
-    padding: px-to-rem(17px 22px);
-    border-radius: px-to-rem(3px);
-    border: px-to-rem(2px) solid $dark-gray;
+    margin-bottom: 24px;
+    height: 50px;
+    padding: 17px 22px;
+    border-radius: 3px;
+    border: 2px solid $dark-gray;
     background: rgba(255, 255, 255, 0%);
 
     &::placeholder {
@@ -51,8 +52,8 @@
       color: $white;
     }
 
-    @media (min-width: $desktop) {
-      width: calc((100% - 21px) / 2);
+    @media (min-width: $tablet) {
+      @include set-width(24px, 2);
       margin-bottom: 0;
     }
   }

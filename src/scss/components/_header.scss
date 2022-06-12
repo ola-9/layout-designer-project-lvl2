@@ -22,6 +22,7 @@
 
     @include set-font(11px, 13px, bold, uppercase);
     @include link-reset;
+    color: $white;
     margin-bottom: px-to-rem(17px);
 
     @media (min-width: $tablet) {
