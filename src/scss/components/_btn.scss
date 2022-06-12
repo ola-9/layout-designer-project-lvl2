@@ -21,6 +21,18 @@
   &--subscribe {
     display: block;
     border: 1px solid $white;
+
     @include link-reset;
+  }
+
+  &--album {
+    display: inline-block;
+
+    @include link-reset;
+    border: 1px solid $dark-gray;
+    padding: 16px 30px;
+    color: $dark-gray;
+
+    @include set-font(13px, 19px, 400, uppercase);
   }
 }

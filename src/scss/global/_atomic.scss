@@ -2,14 +2,21 @@
   margin-top: 100px;
 }
 
-.mb-100 {
-  margin-bottom: 100px;
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 .mb-40 {
   margin-bottom: 40px;
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
 
 .d-flex {
   display: flex;
@@ -27,7 +34,23 @@
   gap: 50px;
 }
 
+.g-16 {
+  gap: 16px;
+}
+
 .text-size-1 {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-dark-gray {
+  color: $dark-gray;
+}
+
+.text-orange {
+  color: $orange;
 }

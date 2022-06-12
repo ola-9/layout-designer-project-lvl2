@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: column;
 
-
     @media (min-width: $tablet) {
       max-width: 570px;
       margin: 0 auto;
@@ -44,7 +43,7 @@
     padding: 17px 22px;
     border-radius: 3px;
     border: 2px solid $dark-gray;
-    background: rgba(255, 255, 255, 0%);
+    background: rgb(255 255 255 / 0%);
 
     &::placeholder {
       font-weight: 700;

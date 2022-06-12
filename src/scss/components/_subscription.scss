@@ -1,3 +1,5 @@
+$list-bgs: ("free": "1", "standard": "2", "premium": "3");
+
 .subscription {
   // margin: 100px 0;
   text-align: center;
@@ -19,15 +21,14 @@
 
     @media (min-width: $desktop) {
       @include set-width(50px, 3);
-    }  
+    }
   }
-  
-  $list-bgs: ('free': '1', 'standard': '2', 'premium': '3');
+
   @each $class, $name in $list-bgs {
     @include set-subscription-bg($class, $name);
   }
 
-  &__item { 
+  &__item {
     padding: 16px 24px 65px;
   }
 

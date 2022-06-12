@@ -4,7 +4,7 @@
 
 html {
   font-size: $rem-base;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -43,13 +43,20 @@ p {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
 .container {
   max-width: $mobile;
   margin: 0 auto;
-  padding: px-to-rem(0px 20px);
+  padding: 0 20px;
 
   @media (min-width: $tablet) {
-    max-width: px-to-rem(768px);
+    max-width: 768px;
   }
 
   @media (min-width: $desktop) {

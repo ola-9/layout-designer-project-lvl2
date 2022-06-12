@@ -9,8 +9,8 @@
 }
 
 @mixin set-font($size, $height, $weight: normal, $text-transform: none) {
-  font-size: px-to-rem($size);
-  line-height: px-to-rem($height);
+  font-size: $size;
+  line-height: $height;
   font-weight: $weight;
   text-transform: $text-transform;
 }
