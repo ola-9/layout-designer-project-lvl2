@@ -35,4 +35,12 @@
 
     @include set-font(13px, 19px, 400, uppercase);
   }
+
+  &--download {
+    padding: 17px 40px;
+    background-color: $red;
+    border-radius: 32px;
+    text-transform: none;
+    color: $white;
+  }
 }

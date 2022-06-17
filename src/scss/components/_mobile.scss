@@ -1,0 +1,21 @@
+.mobile {
+  &__header {
+    text-align: center;
+  }
+
+  &__img-wrapper {
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      width: 50%;
+      order: 2;
+    }
+  }
+
+  &__desc-wrapper {
+    @media (min-width: $tablet) {
+      width: 50%;
+      order: 1;
+    }
+  }
+}

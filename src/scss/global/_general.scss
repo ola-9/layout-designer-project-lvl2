@@ -19,7 +19,7 @@ h1 {
   @include set-font(30px, 45px, bold, uppercase);
 
   @media (min-width: $desktop) {
-    @include set-font(60px, 90px);
+    @include set-font(60px, 90px, bold, uppercase);
   }
 }
 
@@ -27,7 +27,7 @@ h2 {
   @include set-font(18px, 27px, bold, uppercase);
 
   @media (min-width: $desktop) {
-    @include set-font(38px, 57px);
+    @include set-font(38px, 57px, bold, uppercase);
   }
 }
 

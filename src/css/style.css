@@ -34,8 +34,8 @@ h1 {
   h1 {
     font-size: 60px;
     line-height: 90px;
-    font-weight: normal;
-    text-transform: none;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
@@ -49,8 +49,8 @@ h2 {
   h2 {
     font-size: 38px;
     line-height: 57px;
-    font-weight: normal;
-    text-transform: none;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
@@ -99,6 +99,10 @@ img {
   margin-bottom: 16px;
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -121,6 +125,10 @@ img {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .g-50 {
@@ -345,6 +353,13 @@ img {
   font-weight: 400;
   text-transform: uppercase;
 }
+.btn--download {
+  padding: 17px 40px;
+  background-color: #95390c;
+  border-radius: 32px;
+  text-transform: none;
+  color: #fff;
+}
 
 .subscription {
   text-align: center;
@@ -466,6 +481,25 @@ img {
   line-height: 19px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.mobile__header {
+  text-align: center;
+}
+.mobile__img-wrapper {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .mobile__img-wrapper {
+    width: 50%;
+    order: 2;
+  }
+}
+@media (min-width: 768px) {
+  .mobile__desc-wrapper {
+    width: 50%;
+    order: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
