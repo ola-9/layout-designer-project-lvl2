@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @include media("md") {
+    flex-direction: row;
+  }
+}
+
+.nav-link {
+  color: map.get($theme-colors, "dark-gray");
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  &.active {
+    color: map.get($theme-colors, "white");
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 20px 30px;
+
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  &.btn-outline {
+    border-color: inherit;
+  }
+}
+
+@each $color-name, $color-value in $theme-colors {
+  .btn-#{$color-name} {
+    background-color: $color-value;
+  }
+
+  .btn-outline-#{$color-name} {
+    border-color: $color-value;
+  }
+}

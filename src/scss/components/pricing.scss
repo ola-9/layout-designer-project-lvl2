@@ -1,0 +1,35 @@
+.pricing {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  .pricing-item {
+    padding-right: map.get($sizes, "2");
+    padding-left: map.get($sizes, "2");
+
+    border-radius: map.get($sizes, "1");
+  }
+
+  .pricing-header {
+    font-weight: normal;
+
+    @include media("md") {
+      font-size: map.get($sizes, "2");
+    }
+  }
+}
+
+.bg-daw {
+  background-image: url("../images/subscribe_1.png");
+  background-size: cover;
+}
+
+.bg-microphone {
+  background-image: url("../images/subscribe_2.png");
+  background-size: cover;
+}
+
+.bg-concert {
+  background-image: url("../images/subscribe_3.png");
+  background-size: cover;
+}

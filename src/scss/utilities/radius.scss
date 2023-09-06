@@ -1,0 +1,3 @@
+@each $size, $value in $sizes {
+  .radius-#{$size} { border-radius: $value; }
+}

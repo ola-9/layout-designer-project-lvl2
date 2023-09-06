@@ -1,0 +1,75 @@
+.container {
+  box-sizing: border-box;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 #{$container-gap / 2};
+
+  @include media("lg") {
+    width: map.get($breakpoints, "lg");
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+}
+
+.grid-md-2 {
+  @include media("md") {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(50% - 50px));
+  }
+}
+
+.grid-md-4 {
+  @include media("md") {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(25% - 50px));
+  }
+}
+
+.grid-lg-4 {
+  @include media("lg") {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(25% - 50px));
+  }
+}
+
+.column-gap-50 {
+  column-gap: 50px;
+}
+
+.row-gap-25 {
+  row-gap: 25px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -#{$container-gap / 2};
+  margin-left: -#{$container-gap / 2};
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+
+  padding-right: #{$container-gap / 2};
+  padding-left: #{$container-gap / 2};
+}
+
+.col-10 {
+  flex: 0 0 10%;
+}
+
+.col-20 {
+  flex: 0 0 20%;
+}

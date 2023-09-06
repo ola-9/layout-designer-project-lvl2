@@ -1,0 +1,19 @@
+.popular-track {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  .cover {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+  }
+
+  .track-info {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

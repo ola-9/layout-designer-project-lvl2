@@ -1,0 +1,237 @@
+@each $size, $value in $sizes {
+  @include indents("margin", "m", $size, $value);
+  @include indents("padding", "p", $size, $value);
+}
+
+@each $size, $value in $sizes {
+  @include media("md") {
+    @include indents("margin", "m", $size, $value, "md");
+  }
+
+  @include media("lg") {
+    @include indents("margin", "m", $size, $value, "lg");
+  }
+}
+
+@each $size, $value in $sizes {
+  @include media("md") {
+    @include indents("padding", "p", $size, $value, "md");
+  }
+
+  @include media("lg") {
+    @include indents("padding", "p", $size, $value, "lg");
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@each $size, $value in $sizes {
+  .w-#{$size} { width: $value; }
+  .h-#{$size} { width: $value; }
+}
+
+@each $size, $value in $sizes {
+  @include media("md") {
+    .w-md-#{$size} { width: $value; }
+    .h-md-#{$size} { width: $value; }
+  }
+
+  @include media("lg") {
+    .w-lg-#{$size} { width: $value; }
+    .h-lg-#{$size} { width: $value; }
+  }
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-md-1 {
+  @include media("md") {
+    order: 1;
+  }
+}
+
+.order-md-2 {
+  @include media("md") {
+    order: 2;
+  }
+}
+
+.order-lg-1 {
+  @include media("lg") {
+    order: 1;
+  }
+}
+
+.order-lg-2 {
+  @include media("lg") {
+    order: 2;
+  }
+}
+
+@each $size, $value in $sizes {
+  .text-size-#{$size} { font-size: $value; }
+}
+
+@each $color-name, $color-value in $theme-colors {
+  .text-#{$color-name} { color: $color-value; }
+  .bg-#{$color-name} { background-color: $color-value; }
+}
+
+@each $size, $value in $sizes {
+  .radius-#{$size} { border-radius: $value; }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-md-row {
+  @include media("md") {
+    flex-direction: row;
+  }
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.py-200 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.filter-revert {
+  filter: invert(1);
+}
+
+.bg-guitar {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-morten {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-gradient {
+  background: $primary-gradient;
+}
+
+.header-form {
+  max-width: 570px;
+}
+
+.form-input {
+  flex-grow: 1;
+
+  box-sizing: border-box;
+
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-family: inherit;
+
+  background: none;
+
+  border: 2px solid map.get($theme-colors, "dark-gray");
+  border-radius: 3px;
+}
+
+.form-input::placeholder {
+  color: #fff;
+}

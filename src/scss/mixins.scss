@@ -1,0 +1,18 @@
+@mixin media($type: "large") {
+  @media screen and (min-width: map-get($breakpoints, $type)) {
+    @content;
+  }
+}
+
+@mixin indents($type, $abbreviation, $size, $value, $media: "") {
+  $prefix: $size;
+
+  @if $media != "" {
+    $prefix: "#{$media}-#{$size}";
+  }
+
+  .#{$abbreviation}t-#{$prefix} { #{$type}-top: $value; }
+  .#{$abbreviation}b-#{$prefix} { #{$type}-bottom: $value; }
+  .#{$abbreviation}r-#{$prefix} { #{$type}-right: $value; }
+  .#{$abbreviation}l-#{$prefix} { #{$type}-left: $value; }
+}

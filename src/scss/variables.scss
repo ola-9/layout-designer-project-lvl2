@@ -1,0 +1,60 @@
+// General
+
+$breakpoints: (
+  "lg": 1240px,
+  "md": 768px,
+  "sm": 425px,
+);
+$container-gap: 40px;
+$header-top: 25px;
+
+// Fonts
+
+$font-family: (
+  "Roboto": (
+    "Roboto-Bold",
+    "Roboto-Medium",
+    "Roboto-Regular",
+  ),
+);
+$rem-base: 16px;
+$line-height: 1.5;
+
+// Colors
+
+$theme-colors: (
+  "white": #fff,
+  "black": #08020d,
+  "gray": #e0e0e0,
+  "dark-gray": #cacaca,
+  "dark": #3c3b3d,
+  "green": #34c176,
+  "orange": #f89202,
+  "purple": #5328a1,
+  "red": #95390c,
+);
+$primary-gradient: linear-gradient(
+  89.75deg,
+  map.get($theme-colors, "purple") 32.83%,
+  map.get($theme-colors, "red") 81.56%
+);
+
+// Sizes
+
+$sizes: (
+  "0": 0,
+  "1": rem($rem-base),
+  "2": rem($rem-base * 1.5),
+  "3": rem($rem-base * 2),
+  "4": rem($rem-base * 2.5),
+  "5": rem($rem-base * 3),
+  "6": rem($rem-base * 3.5),
+  "7": rem($rem-base * 4),
+  "auto": auto,
+);
+
+// Buttons
+
+$btn-radius: 5px;
+$btn-padding: 20px;
+$btn-border: 1px solid;
