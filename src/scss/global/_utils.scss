@@ -2,7 +2,7 @@
   $result: ();
 
   @each $value in $list {
-    $result: append($result, calc(($value / $rem-base) * 1rem));
+    $result: list.append($result, calc(($value / $rem-base) * 1rem));
   }
 
   @return #{$result};
