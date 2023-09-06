@@ -3,6 +3,13 @@
     text-align: center;
   }
 
+  &__body {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__img-wrapper {
     text-align: center;
 
